@@ -1,0 +1,54 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Outline|Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Grocery Store Shopping Lists</title>
+</head>
+<body>
+    
+    <div id="heading">
+        <h2>Grocery Store Shopping Lists</h2>
+    </div>
+    <div id="adding-stores">
+        <input type="text" id="nameTextBox" placeholder="Store Name" />
+        <input type="text" id="addressTextBox" placeholder="Address" />
+        <button id="addStoreButton">Add Store</button>
+    </div>
+
+    <div id="storeList"></div>
+
+    <div id="adding-items">
+        <input type="text" id="food-nameTextBox" placeholder="Food Name" />
+        <input type="text" id="quantityTextBox" placeholder="Quantity" />
+        <input type="text" id="priceTextBox" placeholder="Cost" />
+        <button id="addFoodButton">Add Store</button>
+    </div>
+
+    <div id="foodList"></div>
+    
+
+
+    
+    <script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-database.js"></script>
+    <script src="keys.js">
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+        apiKey: "AIzaSyChtBn-xWn1TcdW9_69lIQVsRvzWLFT-oc",
+        authDomain: "shopping-list-16105.firebaseapp.com",
+        databaseURL: "https://shopping-list-16105.firebaseio.com",
+        projectId: "shopping-list-16105",
+        storageBucket: "",
+        messagingSenderId: "221710233628",
+        appId: "1:221710233628:web:fc2c08deef30e972"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="app.js"></script>
+</body>
+
+</html>
